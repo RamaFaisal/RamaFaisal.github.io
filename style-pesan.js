@@ -60,14 +60,14 @@ function displaycart(){
     document.getElementById("count").innerHTML=cart.length;
     if(cart.length==0){
         document.getElementById('cartItem').innerHTML = "Your cart is empty";
-        document.getElementById("total").innerHTML = "Rp. "+0+".00";
+        document.getElementById("total").innerHTML = "Rp. "+0+".000";
     }
     else{
         document.getElementById("cartItem").innerHTML = cart.map((items)=>
         {
             var {image, title, price} = items;
             total=total+price;
-            document.getElementById("total").innerHTML = "Rp. "+total+".00";
+            document.getElementById("total").innerHTML = "Rp. "+total+".000";
             return(
                 `<div class='cart-item'>
                 <div class='row-img'>
